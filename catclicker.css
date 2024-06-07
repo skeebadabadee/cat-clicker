@@ -1,0 +1,270 @@
+/* Moya Cronin */
+
+/* Highscore Table */
+
+.addscorebutton {
+  justify-content: center;
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+  color: #660033;
+  background-color: #ffcce0;
+  border: 20px;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.addscorebuttonegypt {
+  justify-content: center;
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+  color: #3f2f10;
+  background-color: #fe9933;
+  border: 20px;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.addscorebuttonegypt:disabled {
+  justify-content: center;
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+  color: #130e05;
+  background-color: #b36c25;
+  border: 20px;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+input:disabled {
+  background: #777777;
+  color: #2c2b2b;
+}
+
+#scores {
+  border-collapse: collapse;
+  border: 2px solid white;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+  padding: 30px;
+  margin: 0px;
+}
+
+#scores td {
+  border: 2px solid white;
+
+  padding: 1em;
+}
+
+#scores td:nth-child(1) {
+  width: 25%;
+  background: #ffc9df;
+  color: white;
+}
+
+#scores td:nth-child(2) {
+  width: 25%;
+  background: #ffc9df;
+  color: white;
+  font-family: "DotGothic16", sans-serif;
+}
+
+/* image style */
+
+img {
+  padding: 40px;
+  width: 190px;
+  height: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+.imgactive:hover {
+  animation: shake 0.4s;
+  animation-iteration-count: infinite;
+}
+
+.imginactive:hover {
+  animation: shake 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(-1px, -2px);
+  }
+  20% {
+    transform: translate(-2px, 0px);
+  }
+  30% {
+    transform: translate(2px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 1px);
+  }
+  70% {
+    transform: translate(2px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  90% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(1px, -2px);
+  }
+}
+
+body {
+  background-color: lightblue;
+}
+
+.centeregypt {
+  margin: auto;
+  width: 30%;
+  border: 15px solid #fefe99;
+  padding: 5px;
+  background-color: #fecc66;
+  text-align: center;
+}
+
+.center {
+  margin: auto;
+  width: 30%;
+  border: 15px solid #ffcce0;
+  padding: 5px;
+  background-color: #fcb6d2;
+  text-align: center;
+}
+
+#kittyaround {
+  cursor: url("images/pawsmall.png"), pointer;
+  min-width: 180px;
+  min-height: 140px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.timeleft {
+  font-family: "DotGothic16", sans-serif;
+  color: #660033;
+}
+
+#menufont {
+  font-family: "DotGothic16", sans-serif;
+  color: #660033;
+  text-align: center;
+}
+
+/*level menu style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  width: 100px;
+  background-color: #f1f1f1;
+  border: 10px solid #ffcce0;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  color: #660033;
+  text-decoration: none;
+  text-align: center;
+}
+
+li {
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+  color: #660033;
+  border-bottom: 10px #ffcce0;
+}
+
+li:last-child {
+  border-bottom: none;
+  text-align: center;
+}
+
+li a.active {
+  background-color: #fcb6d2;
+  color: white;
+  text-align: center;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffc9df;
+  color: white;
+  text-align: center;
+}
+
+.levelmenu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/*start button style */
+.buttons {
+  justify-content: center;
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+  color: #660033;
+  background-color: #ffcce0;
+  border: 10px rgb(236, 182, 203);
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.buttons:hover {
+  background-color: #ecc6d4;
+}
+
+.buttons:focus {
+  border: 1px solid white;
+}
+
+.buttons:disabled {
+  background: #7c7c7c;
+  color: #8a8a8a;
+}
+
+.buttonbox {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.locked:disabled {
+  justify-content: center;
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+  border: 20px;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  background: #58484e;
+  color: #ffffff;
+}

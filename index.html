@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Moya Cronin Interactive Activities Game -->
+    <title>CAT CLICKER </title>
+
+    <link rel="stylesheet" type="text/css" href="catclicker.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+      
+    </style>
+
+  <script type="text/javascript" src="catclicker.js"></script>
+  <script src="confetti.js"></script>
+
+  </head>
+
+	<body>
+    <!--AUDIO LINK -->
+    <audio id="mew" src="audio/pop.mp3" preload="auto"></audio>
+
+    <p id=menufont >Click the cat and collect pokes to buy upgrades! 10 of each upgrade is needed to unlock the next.<br>
+    </p>
+
+  
+
+    <!--START BUTTONS -->
+    <!-- <div class="buttonbox" >
+      <input type="button" class="buttons" id="startB" value="start" onclick="startGame();">
+      <input type="button"  class="buttons"id="endB" value="end" onclick="endGame();">
+    </div>
+    -->
+    <div id="center" class="center">
+      <h1 class="timeleft">
+      Cat Clicker
+      </h1
+
+    <!--TIMER -->
+     <!-- <div class="timeleft"> Time left:
+        <span id = "countdown"> 15 seconds</span><br/>
+      </div> -->
+      <div class="timeleft"> Pokes:
+        <span id="click">0</span><br/>
+      </div>
+      <div class="timeleft"> Pokes Per Second (PPS):
+        <span id="pps">0</span><br/>
+      </div>
+
+    <!-- CAT PICTURE -->
+      <div id='kittyaround'>
+        <img alt="cat" id='kitty' src="images/cat1.png" class="imginactive" onclick="addClick(1);changeImage();">
+      </div>
+      <!-- <div class="timeleft">
+        <br>Highscore: <span id="highScore">0</span></br>
+      </div> -->
+
+
+
+
+    <!-- LEVEL MENU -->
+      <!-- <div class="levelmenu">
+        <ul>
+          <li><a id = level1 class="active" href="#level1" onclick="changeLevel1();">Level 1</a></li>
+          <li><a id = level2 href="#level2" onclick="changeLevel2();">Level 2</a></li>
+          <li><a id = level3 href="#level3" onclick="changeLevel3();">Level 3</a></li>
+        </ul>
+      </div> -->
+
+
+  <!-- HIGHSCORE TABLE -->
+  <!-- <br> 
+<p id= "menufont"> 
+Name: <input type = "text" 
+id = "namein">
+</p>
+
+<p id= "menufont"> 
+Score: <input type = "text" 
+id = "scorein">
+</p>
+-->
+<div>
+</br>
+<input id = furballButton type = "button" disabled
+value = "Furball &#129526; (10) [0]" 
+class="addscorebutton" 
+onclick = "addFurball();">
+</br>
+<br>
+<input id = litterboxButton type = "button" disabled
+value = "     LOCKED      " 
+class="locked" 
+onclick = "addLitterbox();">
+</br>
+</br>
+<input id = catnipButton type = "button" disabled
+value = "     LOCKED      " 
+class="locked" 
+onclick = "addCatnip();">
+</br>
+</br>
+<input id = bastetButton type = "button" disabled
+value = "     LOCKED      " 
+class="locked" 
+onclick = "addBastet();">
+</br>
+</br>
+</div>
+<!-- 
+<div id = "highscoretable"> -->
+
+
+	</body>
+</html>
